@@ -1,14 +1,15 @@
 version: '3'
 
 services:
-  postgresql:
-    image: postgres:latest
+  postgresql9.5:
+    image: postgres:9.5
     ports:
       - "5432:54321"
     volumes:
       - ./postgresql_data:/var/lib/postgres
-  mysql:
+  mysql5.7:
     image: mysql:5.7
+    env_file: .env
     ports:
       - "3306:33601"
     volumes:
