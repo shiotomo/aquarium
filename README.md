@@ -9,6 +9,11 @@ Dockerコンテナ上でデータベースを管理するためのツールで�
 - Docker
 - DockerCompose
 
+## 使用データベース
+
+- PostgreSQL 9.5
+- MySQL 5.7
+
 ## コマンド
 
 実行
