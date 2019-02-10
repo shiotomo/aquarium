@@ -14,3 +14,10 @@ services:
       - "127.0.0.1:33061:3306"
     volumes:
       - ./mysql_data:/var/lib/mysql
+  redis:
+    image: redis:3.2.9-alpine
+    env_file: .env
+    ports:
+      - "127.0.0.1:63791:63791"
+    volumes:
+      - ./redis-data:/data
