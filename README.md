@@ -13,6 +13,7 @@ Dockerコンテナ上でデータベースを管理するためのツールで�
 
 - PostgreSQL 9.5
 - MySQL 5.7
+- Redis
 
 ## コマンド
 
