@@ -1,4 +1,6 @@
 mysql_data
+mysql5_data
+mysql8_data
 postgresql_data
 redis-data
 .env

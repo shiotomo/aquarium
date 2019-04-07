@@ -13,7 +13,14 @@ services:
     ports:
       - "127.0.0.1:33061:3306"
     volumes:
-      - ./mysql_data:/var/lib/mysql
+      - ./mysql5_data:/var/lib/mysql
+  mysql8.0:
+    image: mysql:8.0
+    env_file: .env
+    ports:
+      - "127.0.0.1:33062:3306"
+    volumes:
+      - ./mysql8_data:/var/lib/mysql
   redis:
     image: redis:3.2.9-alpine
     env_file: .env
