@@ -27,3 +27,14 @@ docker-compose up
 ```
 docker-compose down
 ```
+
+## 使用ポート
+
+- PostgreSQL 9.5
+  - 54321
+- MySQL 5.7
+  - 33061
+- MySQL 8.0
+  - 33062
+- Redis
+  - 63791
