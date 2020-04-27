@@ -1,20 +1,26 @@
 version: '3'
 
 services:
-  postgresql9.5:
+  postgresql9:
     image: postgres:9.5
     ports:
       - "127.0.0.1:54321:5432"
     volumes:
-      - ./postgresql_data:/var/lib/postgres
-  mysql5.7:
+      - ./postgresql9_data:/var/lib/postgres
+  postgresql12:
+    image: postgres:12.2
+    ports:
+      - "127.0.0.1:54322:5432"
+    volumes:
+      - ./postgresql12_data:/var/lib/postgres
+  mysql5:
     image: mysql:5.7
     env_file: .env
     ports:
       - "127.0.0.1:33061:3306"
     volumes:
       - ./mysql5_data:/var/lib/mysql
-  mysql8.0:
+  mysql8:
     image: mysql:8.0
     env_file: .env
     ports:
@@ -26,10 +32,12 @@ services:
     env_file: .env
     ports:
       - "127.0.0.1:63791:6379"
+    volumes:
+      - ./redis3-data:/data
   redis5:
     image: redis:5.0.5
     env_file: .env
     ports:
       - "127.0.0.1:63792:6379"
     volumes:
-      - ./redis-data:/data
+      - ./redis5-data:/data

@@ -2,7 +2,7 @@
 
 ## このリポジトリについて
 
-Dockerコンテナ上でデータベースを管理するためのツールです。  
+Dockerコンテナ上でデータベースを管理するためのツールです。
 
 ## 使用技術
 
@@ -12,9 +12,11 @@ Dockerコンテナ上でデータベースを管理するためのツールで�
 ## 使用データベース
 
 - PostgreSQL 9.5
+- PostgreSQL 12.2
 - MySQL 5.7
 - MySQL 8.0
-- Redis
+- Redis 3.2.9
+- Redis 5.0.5
 
 ## コマンド
 
@@ -32,9 +34,13 @@ docker-compose down
 
 - PostgreSQL 9.5
   - 54321
+- PostgreSQL 12.2
+  - 54322
 - MySQL 5.7
   - 33061
 - MySQL 8.0
   - 33062
-- Redis
+- Redis 3.2.9
   - 63791
+- Redis 5.0.5
+  - 63792
