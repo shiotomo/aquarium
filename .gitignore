@@ -2,5 +2,7 @@ mysql_data
 mysql5_data
 mysql8_data
 postgresql_data
+redis5-data
+redis3-data
 redis-data
 .env
