@@ -5,4 +5,12 @@ postgresql_data
 redis5-data
 redis3-data
 redis-data
+!mysql_data/.keep
+!mysql5_data/.keep
+!mysql8_data/.keep
+!postgresql_data/.keep
+!redis5-data/.keep
+!redis3-data/.keep
+!redis-data/.keep
 .env
+_**
