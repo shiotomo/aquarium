@@ -33,18 +33,18 @@ services:
     ports:
       - "127.0.0.1:63791:6379"
     volumes:
-      - ./redis3-data:/data
+      - ./redis3_data:/data
   redis5:
     image: redis:5.0.5
     env_file: .env
     ports:
       - "127.0.0.1:63792:6379"
     volumes:
-      - ./redis5-data:/data
+      - ./redis5_data:/data
   redis6:
     image: redis:6.2.4
     env_file: .env
     ports:
       - "127.0.0.1:63793:6379"
     volumes:
-      - ./redis6-data:/data
+      - ./redis6_data:/data
