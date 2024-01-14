@@ -9,15 +9,14 @@ Dockerコンテナ上でデータベースを管理するためのツールで�
 - Docker
 - DockerCompose
 
-## 使用データベース
+## 事前準備
 
-- PostgreSQL 9.5
-- PostgreSQL 12.2
-- MySQL 5.7
-- MySQL 8.0
-- Redis 3.2.9
-- Redis 5.0.5
-- Redis 6.2.4
+
+```
+cp .env.sample .env
+```
+
+.envに各DBで利用したいportやmysqlのroot passwordを設定してください。
 
 ## コマンド
 
@@ -31,19 +30,3 @@ docker-compose up
 docker-compose down
 ```
 
-## 使用ポート
-
-- PostgreSQL 9.5
-  - 54321
-- PostgreSQL 12.2
-  - 54322
-- MySQL 5.7
-  - 33061
-- MySQL 8.0
-  - 33062
-- Redis 3.2.9
-  - 63791
-- Redis 5.0.5
-  - 63792
-- Redis 6.2.4
-  - 63793
