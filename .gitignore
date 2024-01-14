@@ -1,5 +1,7 @@
 postgresql9_data
 postgresql12_data
+postgresql13_data
+postgresql16_data
 mysql5_data
 mysql8_data
 redis5_data

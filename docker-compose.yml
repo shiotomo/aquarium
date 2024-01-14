@@ -1,51 +1,44 @@
 version: '3'
 
 services:
-  postgresql9:
-    image: postgres:9.5
+  postgresql16:
+    image: postgres:16.1
     ports:
-      - "127.0.0.1:54321:5432"
+      - "127.0.0.1:${POSTGRESQL16_PORT}:5432"
     volumes:
-      - ./postgresql9_data:/var/lib/postgres
-  postgresql12:
-    image: postgres:12.2
+      - ./postgresql16_data:/var/lib/postgres
+  postgresql13:
+    image: postgres:13.13
     ports:
-      - "127.0.0.1:54322:5432"
+      - "127.0.0.1:${POSTGRESQL13_PORT}:5432"
     volumes:
-      - ./postgresql12_data:/var/lib/postgres
+      - ./postgresql13_data:/var/lib/postgres
   mysql5:
     image: mysql:5.7
     env_file: .env
     ports:
-      - "127.0.0.1:33061:3306"
+      - "127.0.0.1:${MYSQL5_PORT}:3306"
     volumes:
       - ./mysql5_data:/var/lib/mysql
   mysql8:
     image: mysql:8.0
     env_file: .env
     ports:
-      - "127.0.0.1:33062:3306"
+      - "127.0.0.1:${MYSQL8_PORT}:3306"
     volumes:
       - ./mysql8_data:/var/lib/mysql
-  redis3:
-    image: redis:3.2.9-alpine
-    env_file: .env
-    ports:
-      - "127.0.0.1:63791:6379"
-    volumes:
-      - ./redis3_data:/data
   redis5:
     image: redis:5.0.5
     env_file: .env
     ports:
-      - "127.0.0.1:63792:6379"
+      - "127.0.0.1:${REDIS5_PORT}:6379"
     volumes:
       - ./redis5_data:/data
   redis6:
     image: redis:6.2.4
     env_file: .env
     ports:
-      - "127.0.0.1:63793:6379"
+      - "127.0.0.1:${REDIS6_PORT}:6379"
     volumes:
       - ./redis6_data:/data
   influxdb:
