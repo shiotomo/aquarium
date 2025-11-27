@@ -39,6 +39,13 @@ services:
       - "127.0.0.1:${REDIS6_PORT}:6379"
     volumes:
       - ./redis6_data:/data
+  valkey9:
+    image: valkey/valkey:9
+    env_file: .env
+    ports:
+      - "127.0.0.1:${VALKEY9_PORT}:6379"
+    volumes:
+      - ./redis6_data:/data
   influxdb:
     image: influxdb:2.3.0
     ports:
