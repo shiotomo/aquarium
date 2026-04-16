@@ -10,3 +10,4 @@ redis6_data
 influxdb_data
 .env
 _**
+.idea
